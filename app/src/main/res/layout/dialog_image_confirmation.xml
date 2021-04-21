@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <TextView
+            android:id="@+id/label_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/upload_question_mark"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"/>
+
+        <ImageView
+            android:id="@+id/image_confirmation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_below="@+id/label_upload"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:id="@+id/image_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_25sdp"
+            app:srcCompat="@drawable/ic_success"
+            android:layout_alignEnd="@+id/image_confirmation"
+            android:layout_below="@id/image_confirmation"/>
+
+        <ImageView
+            android:id="@+id/image_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            app:srcCompat="@drawable/ic_error"
+            android:layout_alignStart="@+id/image_confirmation"
+            android:layout_below="@id/image_confirmation"/>
+
+    </RelativeLayout>
+
+</ScrollView>

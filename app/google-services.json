@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "909823665675",
+    "firebase_url": "https://loginapplication-7ce12.firebaseio.com",
+    "project_id": "loginapplication-7ce12",
+    "storage_bucket": "loginapplication-7ce12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909823665675:android:c8abb3cd4a711ded",
+        "android_client_info": {
+          "package_name": "com.agrial.loginapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909823665675-6kvoeu4opk0rq3ongu60t101fbihs1e1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agrial.loginapplication",
+            "certificate_hash": "d7ae3512aab8051f533064073fb925a821ebefda"
+          }
+        },
+        {
+          "client_id": "909823665675-0811fr5o22ihgkv9gjatpgs46nnuo213.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUFVlqZc74aDTZPz-B2A16X3XhsUAHm4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909823665675-0811fr5o22ihgkv9gjatpgs46nnuo213.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".scoutmanual">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scout Manually Other Insects"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Interested in insight in more insects than whitefly? Count manually other insects."
+        android:textColor="@color/colorPrimary"
+        android:textSize="19dp"
+        android:layout_margin="20dp"
+        android:gravity="center"/>
+
+
+    <CheckBox
+        android:id="@+id/Potato_Aphid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Potato Aphid"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        />
+    <CheckBox
+        android:id="@+id/Horm_Worms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HorWorms/Moths"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        />
+    <CheckBox
+        android:id="@+id/Cut_Worms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flee Beetles"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        />
+    <CheckBox
+        android:id="@+id/Trips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trips"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <CheckBox
+        android:id="@+id/Tatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Tuta absoluta"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button2"
+        android:textColor="#ffff"
+        android:text="Include Other Insects"
+       />
+
+
+</LinearLayout>

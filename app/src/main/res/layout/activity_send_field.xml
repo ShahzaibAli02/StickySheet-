@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+    tools:context=".SendFieldActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_10sdp"
+            >
+            <Button
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:textColor="#858585"
+                android:textStyle="bold"
+                android:onClick="openpopup"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="20dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                />
+            <Button
+                android:id="@+id/btn_SendCache"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp"
+
+                android:layout_marginEnd="10sp"
+                android:background="@drawable/rounded_button2"
+                android:text="Upload Pictures"
+                android:layout_gravity="end|center_vertical"
+                android:textColor="#fff"
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/txtLeafModus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sticky_plate_modus"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:padding="10sp"
+            android:textColor="#66000000"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20sp"
+            >
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Green House "
+                android:textSize="15dp"
+                android:fontFamily="@font/titilliumweb"
+                android:textStyle="bold"
+                android:textColor="#339DF1"
+                />
+            <TextView
+                android:id="@+id/txtgreenhouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green House 1"
+                android:fontFamily="@font/titilliumweb"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20sp"
+            >
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Section"
+                android:fontFamily="@font/titilliumweb"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#339DF1"
+                />
+            <TextView
+                android:id="@+id/txtgreenhosueid"
+                android:text="ID is 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/titilliumweb"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/newStickyPlate"
+            android:layout_marginStart="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Sticky Plate  \t\t"
+            android:textColor="#339DF1"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+
+            android:layout_marginBottom="20sp"
+            >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Front Side"
+                        android:textStyle="bold"
+                        android:textSize="19sp"
+                        android:fontFamily="sans-serif-smallcaps"
+
+                        />
+                    <ImageView
+                        android:id="@+id/clearimg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25sp"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_clear"
+                       />
+
+                    <ImageView
+                        android:id="@+id/targetimg1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_default" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayoutImage2"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Back Side"
+                        android:textStyle="bold"
+                        android:textSize="19sp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        />
+                    <ImageView
+                        android:id="@+id/clearimg2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25sp"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_clear"
+                        />
+                    <ImageView
+                        android:id="@+id/targetimg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_default"
+
+                      />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/object_confirmed_bg_gradient_start" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="Enter field number and path number to send to the database"
+                android:textColor="#009688"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="363dp">
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20sp"
+                android:background="@drawable/border"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:visibility="gone"
+                android:id="@+id/crdLeafDisease"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70sp"
+                    android:orientation="horizontal"
+                    >
+                    <Spinner
+                        android:id="@+id/spnrDisease"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:fontFamily="serif"
+                        android:inputType="textPersonName"
+                        android:paddingStart="10dp"
+
+                        android:paddingLeft="10dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20sp"
+                android:background="@drawable/border"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="180sp"
+                        android:layout_height="wrap_content"
+                        android:text="Field Number"
+                        android:background="@color/colorPrimary"
+                        android:fontFamily="@font/titilliumweb"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="20sp"
+                        android:textColor="@color/white"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@color/colorPrimary"
+                        />
+                    <EditText
+                        android:id="@+id/etField"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:fontFamily="serif"
+                        android:hint="Enter field number"
+                        android:inputType="number"
+                        android:paddingStart="10dp"
+
+                        android:paddingLeft="10dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+
+
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="180sp"
+                        android:layout_height="wrap_content"
+                        android:text="Path Number"
+                        android:fontFamily="@font/titilliumweb"
+                        android:textSize="15dp"
+                        android:background="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:padding="20sp"
+                        android:textColor="@color/white"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@color/colorPrimary"
+                        />
+                    <EditText
+                        android:id="@+id/etPath"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:fontFamily="serif"
+                        android:hint="Enter path number"
+                        android:inputType="number" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCountPotato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:visibility="gone"
+
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="180sp"
+                        android:layout_height="wrap_content"
+                        android:text="Count Potato"
+                        android:fontFamily="@font/titilliumweb"
+                        android:textSize="15dp"
+                        android:background="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:padding="20sp"
+                        android:textColor="@color/white"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@color/colorPrimary"
+                        />
+                    <EditText
+                        android:id="@+id/Potato_Aphid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:fontFamily="serif"
+                        android:hint="Enter Count Potato Aphid"
+                        android:inputType="textPersonName"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardHornWorm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="20sp"
+                android:visibility="gone"
+                android:layout_marginEnd="20sp"
+
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="180sp"
+                        android:layout_height="wrap_content"
+                        android:text="HornWorms/Moths"
+                        android:fontFamily="@font/titilliumweb"
+                        android:background="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:padding="20sp"
+                        android:textColor="@color/white"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@color/colorPrimary"
+                        />
+                    <EditText
+                        android:id="@+id/Horm_Worms"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:fontFamily="serif"
+                        android:hint="Enter Count HornWorms/Moths"
+                        android:inputType="textPersonName"
+                        />
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCountFlee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20sp"
+                android:visibility="gone"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="180sp"
+                        android:layout_height="match_parent"
+                        android:text="Count Flee Beetles"
+                        android:fontFamily="@font/titilliumweb"
+                        android:textSize="15dp"
+                        android:background="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:padding="20sp"
+                        android:textColor="@color/white"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@color/colorPrimary"
+                        />
+                    <EditText
+                        android:id="@+id/Cut_Worms"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:fontFamily="serif"
+                        android:hint="Enter Count Flee Beetles"
+                        android:inputType="textPersonName"
+                      />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCountTrips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20sp"
+                android:layout_marginTop="10sp"
+                android:visibility="gone"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="180sp"
+                        android:text="Count Trips"
+                        android:fontFamily="@font/titilliumweb"
+                        android:textSize="15dp"
+                        android:background="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:padding="20sp"
+                        android:textColor="@color/white"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@color/colorPrimary"
+                        />
+                    <EditText
+                        android:id="@+id/Trips"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:ems="10"
+                        android:fontFamily="serif"
+                        android:hint="Enter Count Trips"
+                        android:inputType="textPersonName"
+                       />
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCountTuta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20sp"
+                android:layout_marginTop="10sp"
+                android:visibility="gone"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="180sp"
+                        android:layout_height="wrap_content"
+                        android:text="Count Tuta absoluta"
+                        android:fontFamily="@font/titilliumweb"
+                        android:textSize="15dp"
+                        android:background="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:padding="20sp"
+                        android:textColor="@color/white"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@color/colorPrimary"
+                        />
+                    <EditText
+                        android:id="@+id/Tatu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:fontFamily="serif"
+                        android:hint="Enter Count Tuta absoluta"
+                        android:inputType="textPersonName" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            >
+            <TextView
+                android:id="@+id/txtUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload"
+                android:background="@drawable/rounded_button2"
+                android:gravity="center"
+                android:fontFamily="@font/titilliumweb"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:padding="15sp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
